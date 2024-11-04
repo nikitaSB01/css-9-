@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #f4f4f4;
+}
+
+.collapsible-container {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.collapse-button {
+    margin-bottom: 20px;
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.collapse-button:hover {
+    background-color: rgb(63, 184, 224);
+}
+
+.collapsible-content {
+    border: 1px solid rgb(214, 182, 182);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease;
+    padding: 0 10px; /* Отступы только по бокам */
+    margin-top: 0; /* Убедитесь, что здесь нет отступа сверху */
+    background-color: antiquewhite;
+}
+.collapsible-content:hover {
+    background-color: rgb(249, 221, 186);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.1s ease;
+}
